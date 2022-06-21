@@ -91,18 +91,7 @@
     border-radius: 15px;
     text-shadow: none;
   }
-  /* .logicon{
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
 
-  .logicon img{
-    width: 6%;
-flex-basis: fill;
-  } */
   .logimage{
     width: 7%;
     flex-basis: fill;
@@ -326,12 +315,15 @@ flex-basis: fill;
   .step-img {
     flex: 1 auto;
     margin: 35px;
+    
     /* border: 12px solid, var(--tertiary-color);
     border-radius: 15px; */
   }
   
   .step-img img {
     max-width: 100%;
+    border: 5px solid var(--secondary-color);
+    border-radius: 20px;
   }
   
   .step-text {
@@ -483,7 +475,7 @@ flex-basis: fill;
   
   .flex-row {
     display: flex;
-    margin-top: 69px;
+    margin-top: 50px;
   }
   
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
