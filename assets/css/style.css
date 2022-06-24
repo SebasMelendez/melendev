@@ -20,6 +20,7 @@
     font-family: Helvetica, Arial, sans-serif;
   }
   
+  /* Acryllic Material Starts */
   .acrylic {
     /* Parent background + Gaussian blur */
     backdrop-filter: blur(10px);
@@ -34,14 +35,10 @@
     /* Tiled noise texture */
     background-image: url(../images/acryllic.png);
   }
+  /* Acryllic Material Ends */
 
 
-
-  
-
-  
-  /* HEADER / NAV BAR STYLES START */
-  
+  /*Header and Nav Syles Start  */
   header {
     padding: 20px 35px;
     display: flex;
@@ -93,17 +90,16 @@
   }
 
   .logimage{
-    width: 7%;
+    width: 8%;
     flex-basis: fill;
   }
 
   .lotext{
     display: none;
   }
-  
-  /* HEADER / NAVBAR STYLES END */
+  /* Header and Nav Styles Ned */
 
-  
+  /* Herro and Banner */
   .hero {
     background-image: url('../images/herogif2.gif');
     background-size: Cover;
@@ -119,19 +115,6 @@
     text-align: left;
   }
 
-  .banner-img {
-    flex: 1 auto;
-    margin: 35px;
-    margin-top: 22px;
-  }
-  
-  .banner-img img {
-    max-width: 100%;
-    border: 5px solid var(--secondary-color);
-    border-radius: 20px;
-  }
-
-/* shade styling */
   .shade {
     position: absolute;
     background: rgba(0, 0, 0, 0.3);
@@ -140,7 +123,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-}
+  }
   .hero-text {
     width: 35%;
     text-align: left;
@@ -170,7 +153,6 @@
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-  
 
   .hero-banner h3 {
     font-size: 24px;
@@ -183,70 +165,22 @@
     font-size: 18px;
     font-weight: bold;
   }
-   
-  .checkbox-wrapper input, .radio-wrapper input {
-    opacity: 0;
+
+  .banner-img {
+    flex: 1 auto;
+    margin: 35px;
+    margin-top: 22px;
   }
   
-  .checkbox-wrapper label, .radio-wrapper label {
-    position: relative;
-    left: 10px;
-    margin: 10px;
-    line-height: 1.6;
+  .banner-img img {
+    max-width: 100%;
+    border: 5px solid var(--secondary-color);
+    border-radius: 20px;
   }
+
+  /* Hero and banner Styles End */  
   
-  .checkbox-wrapper label::before, .radio-wrapper label::before {
-    content: "";
-    height: 20px;
-    width: 20px;
-    background: rgba(255, 255, 255, 0.75);  
-    border: 1px solid var(--secondary-color);  
-    position: absolute;
-    top: -4px;
-    left: -30px;
-  }
-  
-  .radio-wrapper label::before {
-    border-radius: 50%;
-  }
-  
-  .radio-wrapper label::after {
-    content: "";
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background: var(--secondary-color);
-    position: absolute;
-    left: -29px;
-    top: -3px;
-    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
-  }
-  
-  .checkbox-wrapper label::after {
-    content: "";
-    height: 6px;
-    width: 14px;
-    border-left: 2px solid var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    position: absolute;
-    left: -26px;
-    top: 1px;
-    transform: rotate(-58deg);
-  }
-  
-  .checkbox-wrapper input + label::after, 
-  .radio-wrapper input + label::after {
-    content: none;
-  }
-  
-  .checkbox-wrapper input:checked + label::after, 
-  .radio-wrapper input:checked + label::after {
-    content: "";
-  }
-  /* HERO STYLES END */
-  
-  
-  /* FOOTER STYLES START */
+  /* Footer Styling */
   footer {
     background: var(--primary-color);
     padding: 40px 35px;
@@ -271,16 +205,13 @@
   footer a {
     color: var(--secondary-color);
   }
-  /* END FOOTER STYLES */
+  /* Footer styles End */
   
-  /* STYLE ALL SECTION TAGS */
+/* General Stylings */
   section {
     padding: 60px;
   }
 
-  
-  
-  /* SECTION TITLE STYLES START */
   .section-title {
     font-size: 48px;
     border-bottom: 3px solid;
@@ -298,10 +229,10 @@
   .secondary-border {
     border-color: var(--tertiary-color);
   }
-  /* SECTION TITLE STYLES END */
+  /* General stilings end */
   
   
-  /* WHAT YOU DO STYLES START */
+/*  */
   .Projects {
     background: var(--primary-color);
   }
@@ -322,11 +253,13 @@
     border: 5px solid var(--secondary-color);
     animation-duration: 0.5s;
     border-radius: 15px;
+    position: relative;
   }
 
  
 .Thumbnail:hover {
     width: 20vw;
+  ;
 }
   
   .Thumb {
@@ -334,10 +267,9 @@
     padding-bottom: 50px;
     width: 80%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
     align-content: space-between;
+    flex-direction: column;
+    align-items: baseline;
   }
   
   .Thumb h3 {
@@ -346,34 +278,18 @@
     flex: 1 30%;
     text-align: center;
     padding-right: 0px;
-    border-bottom: 5px solid var(--secondary-color);
     margin-bottom: 15px;
   }
-  
-  .step-info {
+
+  .Thumb-container {
     flex: 2 70%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
   }
+  /* Project Styling ends */
 
-  
-  .step-text {
-    flex: 12;
-  }
-  
-  .step-text p {
-    color: var(--tertiary-color);
-    font-size: 18px;
-  }
-  
-  .step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: var(--secondary-color);
-  }
-  
-  /* REACH OUT STYLES START */
+ /* Contact Styles */
   .contact {
     background: var(--secondary-color);
   }
@@ -384,8 +300,8 @@
   
   .contact-info {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: row;
   }
   
   .contact-info > * {
@@ -393,14 +309,18 @@
     margin: 15px;
   }
   
-  .contact-info iframe {
-    height: 400px;
-  }
-  
   .contact-info div {
     color: white;
   }
-  
+
+  .contact h3 {
+    color: var(--primary-color);
+  }
+
+  .socials-box{
+    padding: 25px 0px 0px 0px;
+  }
+
   .contact-info h3 {
     color: var(--primary-color);
     font-size: 32px;
@@ -409,68 +329,38 @@
   .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    border: 1px solid var(--secondary-color);
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: var(--secondary-color);
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    border-radius: 10px;
-    background-color: rgba(255,255,255, 0.75);
-  }
-  
-  .contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255,255,255, 1);
-    outline: none;
-  }
-  
-  .contact-form button {
-    width: 100%;
-    border: none;
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-    border-radius: 10px;
-  }
-  
-  .contact-form button:hover {
-    color: var(--primary-color);
-    background: var(--tertiary-color);
   }
   
   .contact-info a {
     color: var(--primary-color);
   }
+
+  .socials a{
+    text-decoration: none;  
+  }
+
+  .social-Icons{
+    padding-right: 15px;
+    max-width: 45px;
+  }
   /* REACH OUT STYLES END */
-  
-  /* UTILITIES */
-  .text-left {
-    text-align: left;
-  }
-  
-  .text-right {
-    text-align: right;
-  }
-  
+
+  /* Utilities Start */
   .flex-row {
     display: flex;
     margin-top: 50px;
     flex-wrap: wrap;
+    flex-direction: row;
   }
+
+  /* Utilities End */
 
   @media screen and (max-width: 1476px){
     .container{
     flex-direction: column;
-    margin-left: 32px;
+    margin-left: 2px;
     }
 
     .container h3 {
@@ -478,6 +368,10 @@
     }
 
     .Thumbnail{
+      width: 100%;
+    }
+    
+    .Thumbnail:hover{
       width: 100%;
     }
 
@@ -513,10 +407,11 @@
       display: contents;
     }
   
-    footer h2, footer div {
+    footer h2, footer div, p {
       text-align: center;
       width: 100%;
     }
+    
     
     .hero{
       background-image: url('../images/heroalt.jpg');
@@ -524,16 +419,10 @@
       /* transform shade into accrylic */
     .shade{
        backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-  
-    /* Exclusion blend */
-    background-blend-mode: exclusion;
-  
-    /* Color/tint overlay + Opacity */
-    background: rgba(214, 214, 214, 0.3);
-  
-    /* Tiled noise texture */
-    background-image: url(../images/acryllic.png);
+       -webkit-backdrop-filter: blur(10px);
+       background-blend-mode: exclusion;
+       background: rgba(214, 214, 214, 0.3);
+       background-image: url(../images/acryllic.png);
     }
 
     .hero-text, .hero-banner {
@@ -547,14 +436,6 @@
     .section-title {
       width: 80%;
     }
-    
-    .trainer {
-      flex: 0 70%;
-    }
-    
-    .contact-info iframe{
-      flex: 1 100%;
-    }
 
     .flex-row {
       margin-top: 0%;
@@ -567,48 +448,27 @@
       padding: 30px 15px;
     }
   
-    .step h3 {
-      flex: 1 100%;
-      text-align: center;
-    }
-  
-    .step-info {
+    .Thumb-container {
       flex: 2 100%;
       text-align: center;
       justify-content: center;
     }
-  
-    .step-img {
-      flex: 0 32%;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-  
-    .step-text {
-      flex: 100%;  
-    }
-  
-    .trainer-bio h3, .trainer-bio h4 {
-      display: block;
-    }
+
   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-    .hero-banner button {
-      width: 100%;
-    }
   
     .section-title {
       width: 95%;
     }
   
-    .trainer {
-      flex: 0 100%;
-    }
-  
     .contact-info {
       text-align: center;
+    }
+
+    .contact-info div ul li a {
+      font-size: 3.55vw;
     }
   
     .contact-info > * {
@@ -617,6 +477,10 @@
   
     .contact-form {
       order: 3;
+    }
+
+    .contact-info a{
+      font-size: 19px;
     }
   }
   
