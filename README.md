@@ -5,6 +5,8 @@
 This website will display some of what I can do with the power of web development! 
 It also features some of my projects so it doubles as a nice portfolio, stay tuned for more!
 
+![Product Name Screen Shot](./assets/images/fullpageScreenshot.jpeg)
+
 * [Project Website](https://sebasmelendez.github.io/melendev/)
 * [Project Repo](https://github.com/SebasMelendez/melendev)
 
