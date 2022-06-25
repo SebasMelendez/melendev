@@ -239,7 +239,6 @@
 
   .container{
     display: flex;
-    justify-content: space-evenly;
   }
 
   .Thumbnail{
@@ -271,7 +270,15 @@
     flex-direction: column;
     align-items: baseline;
   }
+
+  .stellar{
+    width: 30vw;
+    text-align: center;
+  }
   
+  .stellar:hover{
+    width: 37vw;
+  }
   .Thumb h3 {
     color: var(--secondary-color);
     font-size: 35px;
